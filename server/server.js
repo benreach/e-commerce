@@ -20,7 +20,10 @@ await connectCloudnary();
 
 // ----------ALLOW MUTILPLE ORIGIN------------
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = [
+  "http://localhost:5173",
+  "https://e-commerce-plum-six-15.vercel.app",
+];
 
 // ----------MIDDLEWARE-------------
 app.use(express.json());
