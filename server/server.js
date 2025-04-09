@@ -29,6 +29,9 @@ app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 // -------------METHODS------------
 
+app.get("/", (req, res) => {
+  res.json("API is working.");
+});
 app.use("/api/user", userRouter);
 app.use("/api/seller", sellerRouter);
 app.use("/api/product", productRouter);
